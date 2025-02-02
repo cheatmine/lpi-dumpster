@@ -72,5 +72,6 @@ end
 
 local scripts = game:HttpGet(repo.."scripts/_index"):split("\n")
 for _, name in scripts do
+	if name == "" then continue end 
 	addScript(name)
 end
